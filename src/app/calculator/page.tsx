@@ -158,7 +158,7 @@ const Page = () => {
             </div>
             {(arrival && service) && (
               <ConditionalInputs
-                distributionType={distributionType}
+                distributionType={distributionType as any}
                 arrival={arrival as string}
                 service={service as string}
                 serverCount={serverCount}
